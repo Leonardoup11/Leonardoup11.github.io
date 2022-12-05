@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Overall Trends</title>
+
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Audience Report</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Division 1</a>
+</li>
+<li>
+  <a href="about.html">Division 2</a>
+</li>
+<li>
+  <a href="Branch.html">Branch Comparation</a>
+</li>
+<li>
+  <a href="Overall.html">Overall Trends</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Overall Trends</h1>
+
+</div>
+
+
+<div id="overall-engagement" class="section level2">
+<h2>Overall Engagement</h2>
+<p><br/> <br/> <br/></p>
+<p><img src="general_1.png" width="90%" height="90%" style="display: block; margin: auto;" /></p>
+<p><br/> <br/></p>
+<p><img src="general_2.png" width="100%" height="100%" style="display: block; margin: auto;" /></p>
+<p><br/> <br/></p>
+<p><img src="landing.png" width="100%" height="100%" style="display: block; margin: auto;" /></p>
+<p><br/> <br/> <br/> <br/></p>
+</div>
+<div id="social-media-engagement" class="section level2">
+<h2>Social Media Engagement</h2>
+<p><br/><br/>
+<img src="sem3.png" width="100%" height="100%" style="display: block; margin: auto;" />
+<br/> <br/></p>
+<p><img src="q4.png" width="80%" height="80%" style="display: block; margin: auto;" /></p>
+<p><br/><br/></p>
+</div>
+<div id="aditional-information" class="section level2">
+<h2>Aditional Information</h2>
+<p><br/> <br/></p>
+<div id="education-level" class="section level3">
+<h3><a
+href="https://www.census.gov/newsroom/press-releases/2022/educational-attainment.html#:~:text=1%20In%202021%2C%2029.4%25%20of%20men%20age%2025,more%2C%2053.1%25%20were%20women%20and%2046.9%25%20were%20men./">Education
+Level</a></h3>
+<p>In 2021, the highest level of education of the population age 25 and
+older in the United States was distributed as follows: <br/><br/></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center"><strong>Total, 25 years and over</strong></th>
+<th align="center"><strong>Percentage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Less than a high school diploma</td>
+<td align="center">8.9 %</td>
+</tr>
+<tr class="even">
+<td align="center">High school graduates, no college</td>
+<td align="center">27.9 %</td>
+</tr>
+<tr class="odd">
+<td align="center">Some college or associate degree</td>
+<td align="center">14.9 %</td>
+</tr>
+<tr class="even">
+<td align="center">Completed an Associate’s degree</td>
+<td align="center">10.5%</td>
+</tr>
+<tr class="odd">
+<td align="center">Completed a Bachelor’s degree</td>
+<td align="center">23.5 %</td>
+</tr>
+<tr class="even">
+<td align="center">Advanced Degree</td>
+<td align="center">14.4 %</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="spanish-language" class="section level3">
+<h3>Spanish Language</h3>
+<ul>
+<li><p><strong>23%</strong> of the total amount of leads come from
+<strong>Texas</strong> (<a
+href="https://app.powerbi.com/groups/me/reports/f381dddc-6f32-4138-82a4-185b134a5c79/ReportSectionad6d6d8da06eb3248e83/">IM
+Report</a>)</p></li>
+<li><p>In Texas <strong>40.2%</strong> of the population are
+<strong>Hispanic or Latino</strong></p></li>
+<li><p><strong>85%</strong> of the 23.7 million people in Texas speak a
+language other than English. A large majority of those speak
+<strong>Spanish</strong>.</p></li>
+</ul>
+<p><img src="map1.png" width="90%" height="90%" style="display: block; margin: auto;" /></p>
+<p><img src="popu1.png" width="90%" height="90%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="employment-status" class="section level3">
+<h3>Employment Status</h3>
+<p><br/> <br/></p>
+<p><img src="age_1.png" width="80%" height="60%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/>
+<img src="age_2.png" width="75%" height="60%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="recommendations" class="section level2">
+<h2>Recommendations</h2>
+<p><br/></p>
+<div id="age" class="section level3">
+<h3>Age</h3>
+<p>Create content that is focused on audiences between <strong>25 to 44
+years old</strong>. This age range provides more than 40% of the people
+who interact with Fox Pest Control.</p>
+</div>
+<div id="mobile-device" class="section level3">
+<h3>Mobile device</h3>
+<p>Prioritize content for <strong>mobile devices</strong>. 64% of our
+audience interacts with our websites through mobile devices.</p>
+</div>
+<div id="gender" class="section level3">
+<h3>Gender</h3>
+<p>Although more than 60% of our overall audience are
+<strong>females</strong> it is recommended to create content for both
+genders because in most of the branches the percent of females and males
+are relatively comparable.</p>
+</div>
+<div id="interest" class="section level3">
+<h3>Interest</h3>
+<p>The top 2 interests of the population who search for pest control are
+<strong>Home &amp; Garden/Home Decor</strong> and <strong>Real
+Estate/Residential Properties</strong>. The most popular reason is
+because most people want to either protect or sell their homes. It is
+recommended to advertise Fox Pest Control in real estate and home
+improvement retail websites.</p>
+</div>
+<div id="content-in-spanish" class="section level3">
+<h3>Content in Spanish</h3>
+<p>Create Content in <strong>Spanish</strong>. 23% of the leads received
+in 2022 come from Texas. 40% of the population are Hispanic or Latino.
+According to the U.S. Census in 2021, around 15% of the population in
+Texas did not speak English well and more than a third of the population
+feel more comfortable speaking a language other than English.
+Additionally, NY and IL are listed on the top 5 states where Spanish is
+spoken. 45% of the leads we obtained in 2022 are from these three
+states.</p>
+<p><br/> <br/> <br/> <br/></p>
+</div>
+</div>
+
+<br><br><br><br>
+
+<p> Sources:  <a href="https://analytics.google.com">Google Analytics</a>,                                            <a href="https://ads.google.com/">Google Ads</a>,                                                       <a href="https://www.bls.gov/"> U.S. BUREAU OF LABOR STATISTICS <a/>,                                   <a href= "https://www.census.gov/data.html" >United States Census Bureau </a>,
+              <a href= "https://datausa.io/"              > DATA USA</a></p>
+
+<p> Contact: <span style="color:#0c2439"> leonardo.urbiola@fox-pest.com</span> or <span style="color:#0c2439"> steven.grover@fox-pest.com</span>
+<br><br>
+
+ <div style="float: right">
+ <br><br>
+<img align="center" src="Logo.png" alt="Fox" width="150" />
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
