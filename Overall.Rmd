@@ -1,7 +1,5 @@
 ---
 title: "Overall Trends"
-output: html_document
-
 ---
 
 ## Overall Engagement 

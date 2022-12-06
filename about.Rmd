@@ -1,6 +1,5 @@
 ---
 title: "Division 2"
-output: html_document
 
 ---
 
@@ -12,7 +11,7 @@ output: html_document
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/Albany_1.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/corpus1.png"))
 ```
 
 
@@ -21,7 +20,7 @@ knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/albany_2.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/corpus2.png"))
 ```
 
 <br/>
@@ -34,13 +33,13 @@ knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/buffalo_gender.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/lubbock_1.png"))
 ```
 
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="100%", out.width="100%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/buffa1.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/lubbock_2.png"))
 ```
 
 
@@ -57,12 +56,12 @@ knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/long_1.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/mcallen1.png"))
 ```
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="100%", out.width="100%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/long_2.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/mcallen2.png"))
 ```
 
 <br/>
@@ -75,12 +74,12 @@ knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/rochester_1.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/midland1.png"))
 ```
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="100%", out.width="100%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/rochester_2.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/midland2.png"))
 ```
 <br/>
 <br/>
@@ -106,21 +105,16 @@ knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience
 
 
 
-## VA Beach
-
-
-## Northern VA
-
 ## Lexington
 
 <br/>
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/boston_1.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/lenxintong1.png"))
 ```
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="100%", out.width="100%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/boston_2.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/lenxintong2.png"))
 ```
 <br/>
 <br/>
@@ -147,32 +141,65 @@ knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience
 
 <br/>
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/CT_1.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/baton1.png"))
 ```
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="100%", out.width="100%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/CT_2.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/baton2.png"))
 ```
 <br/>
 <br/>
 <br/>
 <br/>
+
 
 ## Lafayette
 
 <br/>
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/MANCHESTER_1.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/laffayet1.png"))
 ```
 <br/>
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="100%", out.width="100%", paged.print=FALSE}
-knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/MANCHESTER_2.png"))
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/laffayet2.png"))
 ```
 <br/>
 <br/>
 <br/>
 <br/>
 
-## Northshore==
+## Bloomintong 
+<br/>
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/bloomintong1png.png"))
+```
+<br/>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="100%", out.width="100%", paged.print=FALSE}
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/bloomintong2.png"))
+```
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Chicago
+
+<br/>
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="90%", out.width="90%", paged.print=FALSE}
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/chicago1.png"))
+```
+<br/>
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.height="100%", out.width="100%", paged.print=FALSE}
+knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience/chicago2.png"))
+```
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+

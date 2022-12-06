@@ -1,6 +1,6 @@
 ---
-title: "Division 1_1"
-output: html_document
+title: "Division 1"
+
 ---
 
 
@@ -105,11 +105,6 @@ knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience
 
 
 
-
-## Central NJ
-
-## RI - Providence
-
 ## Boston
 
 <br/>
@@ -172,5 +167,4 @@ knitr::include_graphics(c("/Users/leonardo.urbiola_fox/Desktop/R Studio/Audience
 <br/>
 <br/>
 <br/>
-
-## Pittsburgh
+========
